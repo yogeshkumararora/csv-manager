@@ -69,6 +69,8 @@ public class CsvFileWriter {
                     String gbGf = mapping.getGbGf();
                     pipelineDataRecord.add(mapping.getGbGf());
                     pipelineDataRecord.add(mapping.getSvcLine());
+                    logger.info("pipelineRecord:" + pipelineDataRecord);
+
                 } else {
                     logger.info("mapping not found for staffId:" + staffId);
                 }
